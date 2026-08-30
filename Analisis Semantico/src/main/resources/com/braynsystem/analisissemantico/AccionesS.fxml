@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #BAE6FD;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braynsystem.analisissemantico.AccionesSemanticas.AccionesController">
+    <children>
+        <Label layoutX="210.0" layoutY="14.0" prefWidth="177.0" text="Acciones Semanticas">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="84.0" text="Ingresa una instruccion: ">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtInstruccion" layoutX="194.0" layoutY="81.0" prefHeight="26.0" prefWidth="301.0" />
+        <TextArea fx:id="txtResultado" layoutX="123.0" layoutY="203.0" prefHeight="215.0" prefWidth="351.0" />
+        <Label layoutX="269.0" layoutY="173.0" text="Resultados">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Button fx:id="btnAnalizar" layoutX="218.0" layoutY="124.0" mnemonicParsing="false" onAction="#onAnalizar" style="-fx-background-color: #D1FAE5;" text="Analizar" />
+        <Button fx:id="btnLimpiar" layoutX="422.0" layoutY="124.0" mnemonicParsing="false" onAction="#onLimpiar" style="-fx-background-color: #D1FAE5;" text="Limpiar" />
+    </children>
+</AnchorPane>
